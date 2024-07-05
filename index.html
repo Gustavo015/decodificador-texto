@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Decodificador de texto</title>
+</head>
+<body>
+  <main>
+    <section class="input-output">
+      <div>
+        <img class="logo" src="./assets/logo-alura.png" alt="Logo da Alura">
+        <img class="logo1" src="./assets/Vector.png" alt="Logo da Alura">
+      </div>
+      
+      <section class="input">
+        <div class="input-text-area">
+          <textarea class="text" id="text" name="text" placeholder="Digite seu texto" pattern="[a-z]"></TExtarea>
+          <div class="input-instructions">
+            <img class="exclamation" src="./assets/bi_exclamation-circle-fill.png" alt="">
+            <p class="input-instructions-p">Apenas letras minúsculas e sem acento.</p>
+          </div> 
+        </div>
+  
+        <div class="buttons">
+          <button class="button-criptografar" type="button" onclick="encryptText()">Criptografar</button>
+          <button class="button-descriptografar" type="button" onclick="decryptText()">Descriptografar</button>
+        </div>
+      </section>
+  
+      <section class="output" id="output">
+        <img class="image" id="image" src="./assets/image.svg" alt="Imagem ilustrada">
+        <div class="output-message">
+          <p class="output-title">Nenhuma mensagem encontrada</p>
+          <br>
+          <p class="output-subtitle">Digite um texto que você deseja criptografar ou descriptografar.</p>   
+        </div>
+      </section>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>2024 - Desenvolvido por <a href="https://www.linkedin.com/in/gustavo-f-lima/" target="_blank"><strong>Gustavo</strong></a></p>
+  </footer>
+
+  <script src="index.js" defer></script>
+</body>
+</html>
